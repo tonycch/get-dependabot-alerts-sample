@@ -1,0 +1,15 @@
+{
+  "name": "get-dependabot-alerts",
+  "version": "1.0.0",
+  "description": "Gets Dependabot Alerts from a repository",
+  "main": "get-dependabot-alerts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tonycch",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/graphql": "^4.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
