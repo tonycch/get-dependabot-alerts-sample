@@ -66,7 +66,7 @@ async function DumpDependabotAlerts() {
       const vulns = getVulnResult.repository.vulnerabilityAlerts.nodes
 
       for (const vuln of vulns) {
-          console.log(`${org},${repo},${vuln.securityVulnerability.package.name},${vuln.securityVulnerability.package.ecosystem},${vuln.securityAdvisory.summary},${vuln.securityAdvisory.severity},${vuln.securityAdvisory.permalink}`)
+          console.log(`${org},${repo},${vuln.securityVulnerability.package.name},${vuln.securityVulnerability.package.ecosystem},"${vuln.securityAdvisory.summary}",${vuln.securityAdvisory.severity},${vuln.securityAdvisory.permalink}`)
         }
 
       if (hasNextPage) {
@@ -78,3 +78,4 @@ async function DumpDependabotAlerts() {
     console.log(error.message)
   }
 }
+
